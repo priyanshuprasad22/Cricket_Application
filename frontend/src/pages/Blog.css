@@ -1,0 +1,82 @@
+/* Center the entire blog container */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f4f4f9;
+    padding: 20px;
+}
+
+/* Style for the blog post container */
+.post {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+/* Title styling */
+h3 {
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+/* Comment and Like buttons layout */
+.post .btn {
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+/* Style for comment section */
+.comments {
+    margin-top: 20px;
+}
+
+/* For centering the form */
+form {
+    width: 100%;
+    max-width: 600px;
+}
+
+/* Comment input box */
+textarea.form-control {
+    resize: none;
+    min-height: 50px;
+}
+
+/* Adding margin and spacing for the post form */
+.mb-4 {
+    margin-bottom: 20px;
+}
+
+.mb-3 {
+    margin-bottom: 10px;
+}
+
+/* Comment section style */
+.comment {
+    background-color: #f9f9f9;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+/* Styling the like count */
+span {
+    font-weight: bold;
+}
+
+/* Success message for creating a post */
+button[type="submit"] {
+    width: 100%;
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        padding: 10px;
+    }
+}

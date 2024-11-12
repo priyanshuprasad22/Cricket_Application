@@ -1,0 +1,28 @@
+.mySwiper img {
+  width: 100%;
+  height: 400px; 
+  object-fit: fill; 
+}
+
+
+.homepage-container {
+  width: 100%;
+}
+
+
+.content {
+  width: 100%; 
+  padding: 20px;
+}
+
+
+.latest-articles {
+  width: 100%;
+  padding: 20px;
+}
+
+.card-img-top{
+  width: 100%;
+  max-height: 300px;
+  object-fit: fill;
+}

@@ -1,0 +1,122 @@
+/* Global Styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.team-page {
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+.league-title {
+  font-size: 1.5rem; /* Adjusted for scalability */
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.team-name {
+  font-size: 1.75rem; /* Adjusted for scalability */
+  color: #333;
+}
+
+.win-loss-section {
+  margin: 10px 0;
+}
+
+.match-detail-section,
+.small-card-section {
+  margin-top: 40px;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 15px; /* Inner padding */
+}
+
+.more-link {
+  display: block;
+  text-align: center;
+  color: blue;
+  text-decoration: underline;
+}
+
+.more-link:hover {
+  text-decoration: underline;
+  color: darkblue;
+}
+
+.error-message,
+.not-found-message {
+  color: red;
+  text-align: center;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.page-container {
+  display: flex; /* Use flexbox for layout */
+}
+
+/* Sidebar Styles */
+.sidebar {
+  width: 200px; /* Fixed width for the sidebar */
+  padding: 20px;
+  background-color: #f8f9fa;
+  border-right: 1px solid #dee2e6;
+  min-height: 100vh; /* Ensure sidebar takes full height */
+  position: relative; /* Ensure it's positioned properly */
+}
+
+.sidebar-title {
+  margin-bottom: 15px;
+}
+
+.team-link {
+  display: block; /* Make each link take the full width */
+  margin: 5px 0; /* Spacing between links */
+  text-decoration: none;
+  color: #007bff; /* Bootstrap primary color */
+  transition: color 0.3s; /* Smooth transition for hover effect */
+}
+
+.team-link:hover {
+  color: #0056b3; /* Darker shade on hover */
+}
+
+/* Content Section */
+.content-section {
+  flex: 1; /* Allow content to take up remaining space */
+  padding: 20px;
+  margin-left: 100px;
+}
+
+
+/* Loader */
+.loader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Full viewport height */
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+  .team-name {
+    font-size: 1.5rem; /* Adjusted for smaller screens */
+  }
+
+  .page-container {
+    flex-direction: column;
+  }
+
+  .sidebar {
+    width: 100%;
+    border-right: none;
+    border-bottom: 1px solid #dee2e6; /* Optional: Add bottom border */
+  }
+}

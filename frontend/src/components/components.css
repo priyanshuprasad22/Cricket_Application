@@ -1,0 +1,171 @@
+/* MatchSmallCard.css */
+.MatchSmallCard {
+  border: none; /* No border for a cleaner look */
+}
+
+.match-small-card {
+  transition: transform 0.2s; /* Smooth transition */
+}
+
+.match-small-card:hover {
+  transform: translateY(-5px); /* Raise card on hover */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+/* Loader.css */
+.loader {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh; /* Full height for centering */
+}
+
+.spinner {
+  border: 8px solid #f3f3f3; /* Light gray background */
+  border-top: 8px solid #3498db; /* Blue spinner */
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  animation: spin 1s linear infinite; /* Spinning animation */
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.loader p {
+  margin-top: 10px; /* Space between spinner and text */
+  font-size: 18px;
+  color: #333; /* Dark gray */
+}
+
+/* MatchDetailCard.css */
+.match-detail-card {
+  border: 1px solid #ddd; /* Light border */
+  border-radius: 8px; /* Rounded corners */
+  padding: 20px; /* Inner padding */
+  margin: 15px 0; /* Vertical margin */
+  background-color: #f9f9f9; /* Light background */
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  transition: transform 0.2s; /* Transition for hover effect */
+}
+
+.match-detail-card:hover {
+  transform: scale(1.02); /* Scale up on hover */
+}
+
+.match-info {
+  display: flex;
+  flex-direction: column; /* Column layout */
+}
+
+.teams {
+  font-size: 24px; /* Larger font for teams */
+  font-weight: bold; /* Bold text */
+}
+
+.team-link {
+  color: #3498db; /* Team link color */
+  text-decoration: none; /* No underline */
+}
+
+.team-link:hover {
+  text-decoration: underline; /* Underline on hover */
+}
+
+.vs {
+  margin: 0 10px; /* Space around vs */
+}
+
+.match-date,
+.match-venue,
+.match-result {
+  margin: 5px 0; /* Vertical spacing */
+  color: #555; /* Dark gray */
+}
+
+/* Banner Styles */
+.banner {
+  width: 100%;
+  height: 600px; /* Set height */
+  background-color: #f0f2f5; /* Optional background color */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: visible; 
+  position: relative; /* Positioning for children */
+  top: 0;
+  z-index: 1; /* Prevent overflow of image */
+}
+
+.banner-img {
+  width: 100%; /* Fill container width */
+  height: 100%; /* Fill container height */
+  max-height: 100%; /* Maintain aspect ratio */
+  object-fit: cover; /* Cover the container */
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+/* Sidebar Styles */
+.sidebar {
+  width: 200px; /* Sidebar width */
+  padding: 20px; /* Inner padding */
+  background-color: #f8f9fa; /* Light background */
+  border-right: 1px solid #dee2e6; /* Right border */
+}
+
+.sidebar-title {
+  font-size: 1.5em; /* Title size */
+  margin-bottom: 15px; /* Space below title */
+  text-align: center; /* Center title */
+}
+
+.team-link {
+  display: block; /* Each link on a new line */
+  padding: 10px; /* Inner padding for links */
+  color: #007bff; /* Bootstrap primary color */
+  text-decoration: none; /* No underline */
+  transition: background-color 0.3s; /* Smooth background transition */
+}
+
+.team-link:hover {
+  background-color: #e2e6ea; /* Background color on hover */
+}
+
+.global-header{
+  background-color: #ffffff;
+  border-bottom: 2px solid #f0f0f0;
+}
+
+.navbar{
+  padding:10px 20px;
+}
+
+.logo{
+  font-weight:bold;
+  font-size:28px;
+  color: #007bff;
+}
+
+.nav-link{
+  color:#007bff;
+  font-size:18px;
+  font-weight:500;
+}
+
+.nav-link:hover{
+  color: #0056b3;
+}
+
+.dropdown-item{
+  color:#343a40;
+}
+
+.dropdown-item:hover{
+  background-color: #f8f9fa;
+  color: #007bff;
+}
